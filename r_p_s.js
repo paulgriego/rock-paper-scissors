@@ -23,9 +23,9 @@ if (userInputCaseInsenstive=="rock" && computerSelection=="rock") {
 } else if  (userInputCaseInsenstive=="paper" && computerSelection=="paper") {
   alert(`The computer picks:` + (computerSelection)+ ` It is a tie!`);
 } else if  (userInputCaseInsenstive=="paper" && computerSelection=="scissors") {
-  alert(`The computer picks:` + (computerSelection)+ `Sorry you lost! Scissors beats paper!`);
+  alert(`The computer picks:` + (computerSelection)+ ` Sorry you lost! Scissors beats paper!`);
 } else if  (userInputCaseInsenstive=="paper" && computerSelection=="rock") {
-  alert(`The computer picks:` + (computerSelection)+ `Congratulations you won! Paper beats rock!`);
+  alert(`The computer picks:` + (computerSelection)+ ` Congratulations you won! Paper beats rock!`);
 } else {
   alert("You didn't choose rock,paper,or scissors! Try again")
 }
