@@ -28,7 +28,7 @@ if (userInputfinal=="rock" && computerSelection=="rock") {
 
 
 } else if  (userInputfinal=="rock" && computerSelection=="paper") {
-    alert(`The computer picks:` + (computerSelection)+ ` Sorry you lost! Paper beats rock! the score is Player:`);  
+    alert(`The computer picks:` + (computerSelection)+ ` Sorry you lost! Paper beats rock!`);  
     i++;
     computerscore++;
     alert(`The computer score is:` + (computerscore)+ ' The player score is'+ (playerscore));
