@@ -1,22 +1,21 @@
 // The function computer play takes the array, and chooses the three array choices at random.
-
-
 function computerPlay() {
   let string = ["rock","paper","scissors"];
   let computerOutput = string[Math.floor(Math.random()*string.length)]; 
   return computerOutput
 }
-
-playerscore = 0
-computerscore = 0
+// Variables to keep track of the player score, computer score, and the amount of rounds.
+let playerscore = 0
+let computerscore = 0
 let i = 0
+//While loop to loop the game five times.
 while (i < 5) {
-
-userInput=window.prompt("Lets play rock, paper, scissors! Enter your choice:");
-let userLowerCase=userInput.toLowerCase();
-let userInputfinal=userLowerCase.trim();
-let computerSelection=computerPlay();
-
+  //Prompt to input text then converts to lowercase removes whitespaces.  
+  userInput=window.prompt("Lets play rock, paper, scissors! Enter your choice:");
+  let userLowerCase=userInput.toLowerCase();
+  let userInputfinal=userLowerCase.trim();
+  //Computer Selection takes the output from the fnxComputerPlay
+  let computerSelection=computerPlay();
 if (userInputfinal=="rock" && computerSelection=="rock") {
   alert(`The computer picks:` + (computerSelection)+ ' It is a tie!');
   alert(`The computer score is:` + (computerscore)+ ' The player score is '+ (playerscore));
@@ -71,5 +70,26 @@ if (userInputfinal=="rock" && computerSelection=="rock") {
 } else {
   alert("You didn't choose rock,paper,or scissors! Try again")
 }
+
+if (playerscore == 5 && computerscore ==0) {
+  alert('You beat the computer');
+
+} else if  (playerscore == 4 && computerscore ==1) {
+  alert('You beat the computer');
+} else if  (playerscore == 3 && computerscore ==2) {
+  alert('You beat the computer');
+
+} else if  (computerscore == 5 && playerscore ==0) {
+  alert('The computer beat you');
+
+} else if  (computerscore == 4 && playerscore ==1) {
+  alert('YThe computer beat you');
+
+} else if  (computerscore == 3 && playerscore ==2) {
+  alert('The computer beat you');
 }
+}
+
+
+
 
