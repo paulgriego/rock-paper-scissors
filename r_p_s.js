@@ -27,48 +27,48 @@ if (userInputfinal=="rock" && computerSelection=="rock") {
     alert(`The computer picks:` + (computerSelection)+ ` Congratulations you win! Rock beats Scissors!`);
     i++;
     playerscore ++;
-    alert(`The computer score is:` + (computerscore)+ ' The player score is '+ (playerscore));
+    alert(`The computer score is:` + (computerscore)+ ` The player score is `+ (playerscore));
 
 
 } else if  (userInputfinal=="rock" && computerSelection=="paper") {
     alert(`The computer picks:` + (computerSelection)+ ` Sorry you lost! Paper beats rock!`);  
     i++;
     computerscore++;
-    alert(`The computer score is:` + (computerscore)+ ' The player score is'+ (playerscore));
+    alert(`The computer score is:` + (computerscore)+ ` The player score is`+ (playerscore));
 
 } else if  (userInputfinal=="scissors" && computerSelection=="scissors") {
   alert(`The computer picks:` + (computerSelection)+ ` It is a tie!`);
-  alert(`The computer score is:` + (computerscore)+ ' The player score is '+ (playerscore));
+  alert(`The computer score is:` + (computerscore)+ ` The player score is `+ (playerscore));
 
   
 } else if  (userInputfinal=="scissors" && computerSelection=="paper") {
   alert(`The computer picks:` + (computerSelection)+ ` Congratulations you win! Scissors beats paper!`);
   i++;
   playerscore ++;
-  alert(`The computer score is:` + (computerscore)+ ' The player score is '+ (playerscore));
+  alert(`The computer score is:` + (computerscore)+ ` The player score is `+ (playerscore));
 
 } else if  (userInputfinal=="scissors" && computerSelection=="rock") {
   alert(`The computer picks:` + (computerSelection)+ ` Sorry you lost! Rocks beats Scissors!`);
   i++;
   computerscore++;
-  alert(`The computer score is:` + (computerscore)+ ' The player score is '+ (playerscore));
+  alert(`The computer score is:` + (computerscore)+ ` The player score is `+ (playerscore));
 
 } else if  (userInputfinal=="paper" && computerSelection=="paper") {
   alert(`The computer picks:` + (computerSelection)+ ` It is a tie!`);
-  alert(`The computer score is:` + (computerscore)+ ' The player score is '+ (playerscore));
+  alert(`The computer score is:` + (computerscore)+ ` The player score is `+ (playerscore));
 
   
 } else if  (userInputfinal=="paper" && computerSelection=="scissors") {
   alert(`The computer picks:` + (computerSelection)+ ` Sorry you lost! Scissors beats paper!`);
   i++;
   computerscore++;
-  alert(`The computer score is:` + (computerscore)+ ' The player score is '+ (playerscore));
+  alert(`The computer score is:` + (computerscore)+ ` The player score is `+ (playerscore));
 
 } else if  (userInputfinal=="paper" && computerSelection=="rock") {
   alert(`The computer picks:` + (computerSelection)+ ` Congratulations you won! Paper beats rock!`);
   i++;
   playerscore ++
-  alert(`The computer score is:` + (computerscore)+ ' The player score is '+ (playerscore));
+  alert(`The computer score is:` + (computerscore)+ ` The player score is `+ (playerscore));
 
 } else {
   alert("You didn't choose rock,paper,or scissors! Try again")
@@ -86,7 +86,7 @@ if (playerscore == 5 && computerscore ==0) {
   alert('The computer beat you');
 
 } else if  (computerscore == 4 && playerscore ==1) {
-  alert('YThe computer beat you');
+  alert('The computer beat you');
 
 } else if  (computerscore == 3 && playerscore ==2) {
   alert('The computer beat you');
