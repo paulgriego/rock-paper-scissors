@@ -8,7 +8,10 @@ function computerPlay() {
 let playerscore = 0
 let computerscore = 0
 let i = 0
+
+function playGame() {
 //While loop to loop the game five times.
+
 while (i < 5) {
   //Prompt to input text then converts to lowercase removes whitespaces.  
   userInput=window.prompt("Lets play rock, paper, scissors! Enter your choice:");
@@ -87,6 +90,7 @@ if (playerscore == 5 && computerscore ==0) {
 
 } else if  (computerscore == 3 && playerscore ==2) {
   alert('The computer beat you');
+}
 }
 }
 
