@@ -10,11 +10,18 @@
 <body>
 <div class =container>
 <div class =background>
-  <button id = 'startGame'>Start Game</button>
-  <button value ='rock' onclick="userPlay(this.value); playRound(userInput,computerPlay());
+  <button class ='buttonstyle' id="r" value ='rock' onclick="userPlay(this.value); playRound(userInput,computerPlay()); Diablebutton(); WhoWon();
   ">Rock</button>
-  <button value = 'paper' onclick="userPlay(this.value); playRound(userInput,computerPlay());">Paper</button>
-  <button value = 'scissors' onclick="userPlay(this.value); playRound(userInput,computerPlay());">Scissors</button>
+  <button class ='buttonstyle' id = 'p' value = 'paper' onclick="userPlay(this.value); playRound(userInput,computerPlay()); Diablebutton(); WhoWon();">Paper</button>
+  <button class ='buttonstyle' id = 's' value = 'scissors' onclick="userPlay(this.value); playRound(userInput,computerPlay()); Diablebutton(); WhoWon();">Scissors</button>
+  <div class =text>
+  <p id="Result"></p>
+  <p id="Score">Let's play a game of Rock Paper Scissors!<br><br>Best of Five Rounds <br> A tie doesn't count as round <br>and awards no points to either player.</p>
+  <p id="RoundsPlayed"></p>
+  <p id="GameOver"></p>
+  <p id="Winner"></p>
+  </div>
+  <div id="playagain"></div>
 <script src= "r_p_s.js"></script>
 
 </div>

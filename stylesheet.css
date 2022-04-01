@@ -1,19 +1,23 @@
 .buttonstyle {
-  background-color: rgb(78, 218, 136);
+  background-color: rgb(217, 255, 0);
   border: none;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-family: Helvetica;
+  font-family: Courier;
+  font-style: oblique;
   font-size: 30px;
+  text-transform: uppercase;
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
   border-style: ridge;
   border-color: white;
-  padding: 100px;
+  
+  padding: 50px;
+  
   
   
   
@@ -29,9 +33,27 @@
   justify-content: center;
   align-items: center;
 }
+.text {
+  max-height: fit-content;
+  background-color: aqua;
+  border-style: ridge;
+  border-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: Courier;
+  font-size: larger;
+  text-transform: uppercase;
+  text-decoration:dotted;
+  
+  
+  
+}
 
 body {
-  background-color: rgb(86, 77, 206);
+  background-color: rgb(226, 93, 93);
   margin-bottom: 100%;
   
 }
