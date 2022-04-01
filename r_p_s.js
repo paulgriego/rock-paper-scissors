@@ -30,6 +30,7 @@ let userInput
  function playRound(x, y ) {
    
    if (x=="rock" && y=="rock") {
+    document.getElementById("Result").style.color = "yellow";
     document.getElementById('Result').innerHTML="The computer picks rock it is a tie!";
     document.getElementById('Score').innerHTML=`The computer score is: ` + (computerscore)+ ` The player score is: ` + (playerscore);
     document.getElementById('RoundsPlayed').innerHTML=`Rounds Played: `+ (i);
@@ -37,6 +38,7 @@ let userInput
    else if  (x=="rock" && y=="paper") {
     i++;
     computerscore++;
+    document.getElementById("Result").style.color = "red";
     document.getElementById('Result').innerHTML="The computer picked paper you lost";
     document.getElementById('Score').innerHTML=`The computer score is: ` + (computerscore)+ ` The player score is: ` + (playerscore);
     document.getElementById('RoundsPlayed').innerHTML=`Rounds Played: `+ (i);
@@ -44,6 +46,7 @@ let userInput
    else if  (x=="rock" && y=="scissors") {
     i++;
     playerscore++; 
+    document.getElementById("Result").style.color = "green";
     document.getElementById('Result').innerHTML="The computer picked scissors you won";
     document.getElementById('Score').innerHTML=`The computer score is: ` + (computerscore)+ ` The player score is: ` + (playerscore);
     document.getElementById('RoundsPlayed').innerHTML=`Rounds Played: `+ (i);
@@ -51,6 +54,7 @@ let userInput
    else if  (x=="paper" && y=="scissors") {
     i++;
     computerscore++ 
+    document.getElementById("Result").style.color = "red";
     document.getElementById('Result').innerHTML="The computer picked scissors you lost";
     document.getElementById('Score').innerHTML=`The computer score is: ` + (computerscore)+ ` The player score is: ` + (playerscore);
     document.getElementById('RoundsPlayed').innerHTML=`Rounds Played: `+ (i);
@@ -58,16 +62,19 @@ let userInput
    else if (x=="paper" && y=="rock") {
     i++;
     playerscore ++;
+    document.getElementById("Result").style.color = "green";
     document.getElementById('Result').innerHTML="The computer picks rock you won!";
     document.getElementById('Score').innerHTML=`The computer score is: ` + (computerscore)+ ` The player score is: ` + (playerscore);
     document.getElementById('RoundsPlayed').innerHTML=`Rounds Played: `+ (i);
     }
    else if  (x=="paper" && y=="paper") {
+      document.getElementById("Result").style.color = "yellow";
       document.getElementById('Result').innerHTML="The computer picked paper its a tie";
       document.getElementById('Score').innerHTML=`The computer score is: ` + (computerscore)+ ` The player score is: ` + (playerscore);
       document.getElementById('RoundsPlayed').innerHTML=`Rounds Played: `+ (i);
     }
    else if  (x=="scissors" && y=="scissors") {
+      document.getElementById("Result").style.color = "yellow";
       document.getElementById('Result').innerHTML="The computer picked scissors its a tie";
       document.getElementById('Score').innerHTML=`The computer score is: ` + (computerscore)+ ` The player score is: ` + (playerscore);
       document.getElementById('RoundsPlayed').innerHTML=`Rounds Played: `+ (i);
@@ -75,6 +82,7 @@ let userInput
    else if (x=="scissors" && y=="rock") {
       i++;
       computerscore++;
+      document.getElementById("Result").style.color = "red";
       document.getElementById('Result').innerHTML="The computer picks rock you lost!";
       document.getElementById('Score').innerHTML=`The computer score is: ` + (computerscore)+ ` The player score is: ` + (playerscore);
       document.getElementById('RoundsPlayed').innerHTML=`Rounds Played: `+ (i);
@@ -83,6 +91,7 @@ let userInput
    else if  (x=="scissors" && y=="paper") {
       i++;
       playerscore ++;
+      document.getElementById("Result").style.color = "green";
       document.getElementById('Result').innerHTML="The computer picked paper you won";
       document.getElementById('Score').innerHTML=`The computer score is: ` + (computerscore)+ ` The player score is: ` + (playerscore);
       document.getElementById('RoundsPlayed').innerHTML=`Rounds Played: `+ (i);
@@ -100,20 +109,32 @@ let userInput
 
   function WhoWon() {
     if (playerscore == 5 && computerscore ==0) {
+      document.getElementById("Winner").style.color = "green";
+      document.getElementById("Winner").style.fontWeight = "bold";
       document.getElementById("Winner").innerHTML='You beat the computer';
-    
     } else if  (playerscore == 4 && computerscore ==1) {
+      document.getElementById("Winner").style.color = "green";
+      document.getElementById("Winner").style.fontWeight = "bold";
       document.getElementById("Winner").innerHTML='You beat the computer';
+      
     } else if  (playerscore == 3 && computerscore ==2) {
+      document.getElementById("Winner").style.color = "green";
+      document.getElementById("Winner").style.fontWeight = "bold";
       document.getElementById("Winner").innerHTML='You beat the computer';
     
     } else if  (computerscore == 5 && playerscore ==0) {
+      document.getElementById("Winner").style.color = "red";
+      document.getElementById("Winner").style.fontWeight = "bold";
       document.getElementById("Winner").innerHTML='The computer beat you';
     
     } else if  (computerscore == 4 && playerscore ==1) {
+      document.getElementById("Winner").style.color = "red";
+      document.getElementById("Winner").style.fontWeight = "bold";
       document.getElementById("Winner").innerHTML='The computer beat you';
     
     } else if  (computerscore == 3 && playerscore ==2) {
+      document.getElementById("Winner").style.color = "red";
+      document.getElementById("Winner").style.fontWeight = "bold";
       document.getElementById("Winner").innerHTML='The computer beat you';
   }
 }
